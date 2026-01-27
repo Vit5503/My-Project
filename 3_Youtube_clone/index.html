@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     
 </head>
-<body>
+<body class="sidebar-hidden">
     <div class="container">
         <!-- Header / Navbar -->
         <header>
@@ -37,6 +37,9 @@
                 </div>
 
                 <div class="nav-section nav-right">
+                    <button class="nav-button search-button">
+                            <i class="fa-solid fa-search"></i>
+                    </button>
                     <button class="nav-button theme-button">
                         <i class="fa-solid fa-moon"></i>
                     </button>
@@ -46,6 +49,8 @@
         </header>
 
         <main class="main-layout">
+            <div class="screen-overlay"></div>
+
             <!-- Sidebar -->
              <aside class="sidebar">
                 <div class="nav-section nav-left">
@@ -57,7 +62,7 @@
                         <h2 class="logo-text">DVtube</h2>
                     </a>
                 </div>
-                
+
                 <div class="link-container">
                     <div class="link-section">
                         <a href="#" class="link-item">
